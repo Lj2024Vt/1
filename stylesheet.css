@@ -1,0 +1,61 @@
+body{
+ margin: 0;
+  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+  overflow-y: hidden;
+}
+
+.night{
+  height:80vh;
+  width:70vw;
+  
+  margin: 5rem auto;
+  background: url('north2getwellnp.png');
+ background-size:cover;
+ position: relative;
+ box-shadow: 1px 2px 60px rgba(0,0,0,0.4);
+ overflow-x: hidden;
+ 
+ 
+}
+
+.sky{
+ height:140px;
+  width:500%;
+  background: url('north2lightsTnp.png');
+ display:block;
+ position: absolute;
+ bottom:80%;
+ left:0%;
+ background-repeat: repeat-x;
+ animation: moveRight 6s linear infinite;
+}
+
+.surface{
+  height:140px;
+  width:500%;
+  background: url('north2roadTnp.png');
+ display:block;
+ position: absolute;
+ bottom:0%;
+ left:0%;
+ background-repeat: repeat-x;
+ animation: moveRight 6s linear infinite;
+}
+
+.people{
+position:absolute;
+ bottom:5%;
+ left:40%;
+ animation: suspension 2s linear infinite;
+}
+
+@keyframes suspension{
+ 0%{transform: translateY(-1px)}
+ 50%{transform: translateY(2px)}
+ 100%{transform: translateY(-1px)}
+}
+
+
+@keyframes moveRight{
+ 100%{transform: translateX(-500px)}
+}
