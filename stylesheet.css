@@ -4,6 +4,12 @@ body{
   overflow-y: hidden;
 }
 
+div{
+padding: 20px;
+ margin: 10px;
+ text-align: center;
+}
+
 .yesBtn{
   padding: 30px 53px;
   margin-bottom: 2px;
