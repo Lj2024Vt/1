@@ -7,28 +7,60 @@
 <meta name="viewport" content="width=device-width , initial-scale=1.0">
 <meta charset="utf-8">
 <link rel="shortcut icon" href="favicon1.ico">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="stylesheetNew.css">
 <title> -Valentines- </title>
 
 
   </head>
   
     <body>
-      <div id="box1">
-      </div>
 
-      <div id="box2">
-      <b> Mein Valentins-Date sein?</b>
-      </div>
+        <div id="general">
+
+            <div id="hearts" style="display:none">
+                <img id="redHeart1" src="cartoonHeart.png" alt="Heart" style="width:100px;height:100px;  position:relative; top: 40px; left:100px;" >
+                <img id="redHeart2" src="cartoonHeart.png" alt="Heart" style="width:100px;height:100px;  position:relative; top: 0px; right:100px;">
+                <img id="redHeart3" src="cartoonHeart.png" alt="Heart" style="width:100px;height:100px;  position:relative; top: 300px; right:250px;">
+                <img id="redHeart4" src="cartoonHeart.png" alt="Heart" style="width:100px;height:100px;  position:relative; top: 0px; left:300px;">
+            </div>
+
+                <img id="image" src="otterHpyN.png" alt="Happy Otter" style="width:450px;height:450px">
+
+                <h2 id="question"> <b> Mein Valentins-Date sein?</b> </h2>
       
-      <div id="box3">
-      <button id="yesBtn" type="button"> Ja! </button>
-      <button id="noBtn" type="button"> Nein:( </button>
-      </div>
+            <div id="btnGroup">
+                <button id="yesBtn" type="button"> Ja </button>
+                <button id="noBtn" type="button"> Nein </button>
+            </div>
+
+        </div>
+
+        
     </body>
 
   <script>
+    const btn1 = document.querySelector('#yesBtn');
+    const btn2 = document.querySelector('#noBtn');
+    const hrt = document.querySelector('#hearts');
+
+    btn2.addEventListener('mouseover', hoverMove);
+    btn2.addEventListener('click', hoverMove);
+    btn1.addEventListener('click', success);
+
+    function success(){
+        hearts.style.display = 'block';
+    }
+
+    function hoverMove(){
+
+        const x=Math.floor(Math.random()*800)+1;
+        const y=Math.floor(Math.random()*800)+1;
+
+        btn2.style.right = x + "px";
+        btn2.style.top= y + "px";
+    }
     
+
   </script>
   
 </html>
